@@ -122,7 +122,7 @@ export const TestConfigurationStep = (): JSX.Element => {
                   >
                     <Icon
                       icon={RotateLeftRight}
-                      size='sm'
+                      size='md'
                       colorScheme='neutral'
                     />
                     <Text
@@ -754,7 +754,7 @@ const CopyTestUrlButton = ({ onTestRunCreated }: CopyTestUrlButtonProps): JSX.El
       ) : (
         <Icon
           icon={hasCopied ? Checkmark : Copy}
-          size='sm'
+          size='md'
           colorScheme='neutral'
         />
       )}
