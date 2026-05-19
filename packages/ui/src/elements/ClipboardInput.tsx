@@ -31,15 +31,20 @@ export const ClipboardInput = (props: ClipboardInputProps) => {
         elementDescriptor={descriptors.formFieldInputCopyToClipboardButton}
         variant='ghost'
         onClick={() => onCopy()}
-        sx={{
-          position: 'absolute',
-          insetInlineEnd: 0,
+        sx={t => {
+          return {
+            position: 'absolute',
+            insetInlineEnd: t.space.$1,
+            padding: 0,
+            height: t.sizes.$6,
+            aspectRatio: 1,
+            borderRadius: `calc(${t.radii.$md} - ${t.space.$1})`,
+          };
         }}
       >
         <Icon
           elementDescriptor={descriptors.formFieldInputCopyToClipboardIcon}
           icon={hasCopied ? copiedIcon : copyIcon}
-          size='sm'
         />
       </Button>
     </Flex>
