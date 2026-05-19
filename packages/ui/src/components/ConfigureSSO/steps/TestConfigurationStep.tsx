@@ -749,7 +749,7 @@ const CopyTestUrlButton = ({ onTestRunCreated }: CopyTestUrlButtonProps): JSX.El
       {isCreatingTestRun ? (
         <Spinner
           elementDescriptor={descriptors.spinner}
-          size='xs'
+          size='sm'
         />
       ) : (
         <Icon
